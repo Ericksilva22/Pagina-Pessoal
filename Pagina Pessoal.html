@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f57a0205ee.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Erickson Rodrigues</title>
+</head>
+<body>
+    <header>
+        <div>
+            <p> Erick'son </p>
+        </div>
+        <ul>
+           <li>
+               <a href="https://github.com/Ericksilva22/Ericksilva22">GitHub</a>
+           </li>
+           <li>
+            <a href="mailto:ericksonrodrigues13@gmail.com">E-mail</a>
+           </li>
+           <li>
+            <a targent="_blank" href="https://wa.me/86999999999">WhatsApp</a>
+           </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Erickson Rodrigues da Silva</h1>
+                <h5>Full Stack-Developer</h5>
+            </div>
+
+            <div onclick ="displayAbout()" id="arrow">
+                <i id= "animation" class="fa-solid fa-circle-chevron-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>Olá! Me chamo Erickson e atualmente estou no 10º período do Curso de Engenharia Elétrica da Universidade
+                Federal do Piauí (UFPI) - Campus Ministro Petrônio Portella e no 1º período do Curso de Análise e
+                Desenvolvimento de Sistemas da Faculdade Maurício de Nassau (UNISSAU). Possuo formação de Técnico
+                em Eletrotécnica pelo Instituto Federal do Piauí - Campus Teresina Central. Além disso, realizei todo meu
+                Ensino Médio integrado em Edificações pelo Instituto Federal do Piauí (IFPI) - Campus Teresina Zona Sul.</p>
+            </div>
+            <div class="form">
+                <div>
+                    <p> deixe seu contato! ;)</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor email!">
+                    <button>enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
